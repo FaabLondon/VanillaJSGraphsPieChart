@@ -7,14 +7,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // get the element I wish to add the table to
   const body = document.querySelector('body');
-  body.style.font = '16px arial,serif';
-  body.style.color = '#809fff';
+  body.setAttribute('style', 'font:16px arial,serif; color:#809fff');
   // create the table element
   const table = document.createElement('table');
-  table.style.width = '500px';
-  //enables to set border on row element, otherwise can only do on each cell
-  table.style.borderCollapse = 'collapse';
-
+  //collapse, enables to set border on row element, otherwise can only do on each cell
+  table.setAttribute('style', 'width:500px; border-collapse: collapse');
 
   //1) Create the header of the table
   //styling on the row did not work so added to each cell
